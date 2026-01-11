@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TrustNet.Ai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <a href="index.html" class="login-logo">
+                    <span class="logo-icon">🛡️</span>
+                    <span class="logo-text">TrustNet<span class="logo-highlight">.Ai</span></span>
+                </a>
+                <h1>Citizen Login</h1>
+                <p>Secure access to the cyber safety platform</p>
+            </div>
+
+            <!-- Step 1: Email Input -->
+            <div id="emailStep" class="login-step active">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">📧</span>
+                        <input type="email" id="email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-full" id="sendOtpBtn" onclick="sendOTP()">
+                    <span class="btn-text">Send OTP</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+                <div class="login-footer">
+                    <p>We'll send a 6-digit code to your email for verification.</p>
+                </div>
+            </div>
+
+            <!-- Step 2: OTP Input -->
+            <div id="otpStep" class="login-step">
+                <div class="form-group">
+                    <label for="otp">Enter 6-Digit OTP</label>
+                    <div class="otp-inputs">
+                        <input type="text" maxlength="1" class="otp-input" onkeyup="moveFocus(this, 1)">
+                        <input type="text" maxlength="1" class="otp-input" onkeyup="moveFocus(this, 2)">
+                        <input type="text" maxlength="1" class="otp-input" onkeyup="moveFocus(this, 3)">
+                        <input type="text" maxlength="1" class="otp-input" onkeyup="moveFocus(this, 4)">
+                        <input type="text" maxlength="1" class="otp-input" onkeyup="moveFocus(this, 5)">
+                        <input type="text" maxlength="1" class="otp-input" onkeyup="moveFocus(this, 6)">
+                    </div>
+                    <input type="hidden" id="fullOtp">
+                </div>
+                <button class="btn btn-primary btn-full" id="verifyOtpBtn" onclick="verifyOTP()">
+                    <span class="btn-text">Verify & Login</span>
+                </button>
+                <div class="login-footer">
+                    <p>Didn't receive the code? <a href="#" onclick="resendOTP()">Resend</a></p>
+                    <p class="back-link"><a href="#" onclick="goBack()">Change Email</a></p>
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <div id="loadingOverlay" class="loading-overlay">
+                <div class="loader"></div>
+                <p id="loadingText">Sending OTP...</p>
+            </div>
+        </div>
+        
+        <div class="login-info">
+            <div class="info-item">
+                <span class="info-icon">🔒</span>
+                <p>Secure SSL Encrypted Login</p>
+            </div>
+            <div class="info-item">
+                <span class="info-icon">🇮🇳</span>
+                <p>Digital India Initiative</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-bg">
+        <div class="grid"></div>
+        <div class="glow"></div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TrustNet.Ai - Citizen-focused cyber safety platform to detect AI deepfakes, voice scams, and digital misinformation">
+    <meta name="keywords" content="AI, Deepfake Detection, Cyber Safety, Maharashtra, Digital Security">
+    <meta name="author" content="TrustNet.Ai">
+    <title>TrustNet.Ai – Cyber Safety Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ============================================= -->
+    <!-- NAVIGATION HEADER -->
+    <!-- ============================================= -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo Section -->
+                  <a href="#home" class="nav-logo">
+                      <span class="logo-icon">🛡️</span>
+                      <span class="logo-text">TrustNet<span class="logo-highlight">.Ai</span></span>
+                  </a>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#vision" class="nav-link">Vision</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#problem" class="nav-link">Problem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#solution" class="nav-link">Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#detection" class="nav-link">Detection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#workflow" class="nav-link">Workflow</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#impact" class="nav-link">Impact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#awareness" class="nav-link">Awareness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ethics" class="nav-link">Ethics</a>
+                    </li>
+                    <li class="nav-item" id="loginNavItem">
+                        <a href="/login" class="nav-link nav-link-auth" id="loginBtn">Login</a>
+                    </li>
+                    <li class="nav-item" id="userNavItem" style="display: none;">
+                        <div class="user-profile-nav">
+                            <span class="user-avatar">👤</span>
+                            <span class="user-email" id="userEmailNav">user@example.com</span>
+                            <button class="logout-btn" onclick="logout()">Logout</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ============================================= -->
+    <main class="main-content">
+
+        <!-- ========================================= -->
+        <!-- SECTION 1: HOME / HERO -->
+        <!-- ========================================= -->
+        <section class="section section-hero" id="home">
+            <div class="hero-background">
+                <div class="hero-grid"></div>
+                <div class="hero-glow"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span class="badge-text">Hackathon 2026 Project</span>
+                </div>
+                <h1 class="hero-title" id="heroTitle">
+                    Protecting Maharashtra from 
+                    <span class="hero-highlight">AI-Powered</span> 
+                    Cyber Threats
+                </h1>
+                <p class="hero-description" id="heroDesc">
+                    A citizen-focused cyber safety platform designed to detect AI deepfake images, 
+                    voice scams, impersonation messages, and digital misinformation. 
+                    Empowering 12+ crore citizens of Maharashtra with cutting-edge AI defense technology.
+                </p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-number">12Cr+</span>
+                        <span class="stat-label">Citizens Protected</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Active Monitoring</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">AI</span>
+                        <span class="stat-label">Powered Detection</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="scrollToDetect()">
+                        <span class="btn-icon">🔍</span>
+                        <span class="btn-text">Start Detection</span>
+                    </button>
+                    <a href="#vision" class="btn btn-secondary">
+                        <span class="btn-text">Learn More</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <span class="trust-text">Trusted by:</span>
+                    <div class="trust-logos">
+                        <span class="trust-item">Maharashtra Cyber Cell</span>
+                        <span class="trust-divider">|</span>
+                        <span class="trust-item">State Police</span>
+                        <span class="trust-divider">|</span>
+                        <span class="trust-item">Digital India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span class="scroll-text">Scroll to explore</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- SECTION 2: VISION -->
+        <!-- ========================================= -->
+        <section class="section section-vision" id="vision">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Vision</span>
+                    <h2 class="section-title" id="visionTitle">Building a Safer Digital Maharashtra</h2>
+                    <p class="section-subtitle">Our commitment to protecting citizens in the age of AI</p>
+                </div>
+                <div class="vision-content">
+                    <div class="vision-card vision-card-main">
+                        <div class="vision-icon">🎯</div>
+                        <h3 class="vision-card-title">Mission Statement</h3>
+                        <p class="vision-card-text">
+                            To create a comprehensive, accessible, and user-friendly cyber safety ecosystem 
+                            that empowers every citizen of Maharashtra to identify and protect themselves 
+                            against AI-generated threats, deepfakes, and digital fraud.
+                        </p>
+                    </div>
+                    <div class="vision-grid">
+                        <div class="vision-card">
+                            <div class="vision-icon">🛡️</div>
+                            <h3 class="vision-card-title">Protection First</h3>
+                            <p class="vision-card-text">
+                                Proactive defense against emerging AI threats targeting vulnerable populations.
+                            </p>
+                        </div>
+                        <div class="vision-card">
+                            <div class="vision-icon">🤝</div>
+                            <h3 class="vision-card-title">Inclusive Access</h3>
+                            <p class="vision-card-text">
+                                Multi-language support ensuring rural and urban communities benefit equally.
+                            </p>
+                        </div>
+                        <div class="vision-card">
+                            <div class="vision-icon">📚</div>
+                            <h3 class="vision-card-title">Education & Awareness</h3>
+                            <p class="vision-card-text">
+                                Continuous public education programs to build digital literacy across all age groups.
+                            </p>
+                        </div>
+                        <div class="vision-card">
+                            <div class="vision-icon">⚡</div>
+                            <h3 class="vision-card-title">Rapid Response</h3>
+                            <p class="vision-card-text">
+                                Real-time threat detection and immediate alert systems for critical situations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- SECTION 3: PROBLEM STATEMENT -->
+        <!-- ========================================= -->
+        <section class="section section-problem" id="problem">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">The Challenge</span>
+                    <h2 class="section-title" id="problemTitle">The Growing Threat of AI-Powered Cyber Crime</h2>
+                    <p class="section-subtitle">Understanding the risks facing Maharashtra's digital citizens</p>
+                </div>
+                <div class="problem-content">
+                    <div class="problem-stats">
+                        <div class="problem-stat">
+                            <span class="problem-stat-number" data-count="300">0</span>
+                            <span class="problem-stat-suffix">%</span>
+                            <span class="problem-stat-label">Increase in deepfake crimes (2023)</span>
+                        </div>
+                        <div class="problem-stat">
+                            <span class="problem-stat-number" data-count="500">0</span>
+                            <span class="problem-stat-suffix">Cr+</span>
+                            <span class="problem-stat-label">Financial losses to cyber fraud in India</span>
+                        </div>
+                        <div class="problem-stat">
+                            <span class="problem-stat-number" data-count="78">0</span>
+                            <span class="problem-stat-suffix">%</span>
+                            <span class="problem-stat-label">Victims are from rural areas</span>
+                        </div>
+                    </div>
+                    <div class="problem-types">
+                        <h3 class="problem-types-title">Types of AI Threats We Combat</h3>
+                        <div class="problem-grid">
+                            <div class="problem-card">
+                                <div class="problem-card-icon">🎭</div>
+                                <h4 class="problem-card-title">Deepfake Images</h4>
+                                <p class="problem-card-desc">
+                                    AI-generated fake photos used for blackmail, defamation, 
+                                    and spreading misinformation about public figures.
+                                </p>
+                                <ul class="problem-card-list">
+                                    <li>Political manipulation</li>
+                                    <li>Personal harassment</li>
+                                    <li>Identity theft</li>
+                                </ul>
+                            </div>
+                            <div class="problem-card">
+                                <div class="problem-card-icon">🎙️</div>
+                                <h4 class="problem-card-title">Voice Cloning Scams</h4>
+                                <p class="problem-card-desc">
+                                    Synthetic voice technology used to impersonate family members, 
+                                    officials, and business executives for financial fraud.
+                                </p>
+                                <ul class="problem-card-list">
+                                    <li>Family emergency scams</li>
+                                    <li>CEO fraud calls</li>
+                                    <li>Bank impersonation</li>
+                                </ul>
+                            </div>
+                            <div class="problem-card">
+                                <div class="problem-card-icon">💬</div>
+                                <h4 class="problem-card-title">Impersonation Messages</h4>
+                                <p class="problem-card-desc">
+                                    AI-crafted messages mimicking writing styles of known contacts 
+                                    to extract sensitive information or money.
+                                </p>
+                                <ul class="problem-card-list">
+                                    <li>WhatsApp fraud</li>
+                                    <li>Email phishing</li>
+                                    <li>Social engineering</li>
+                                </ul>
+                            </div>
+                            <div class="problem-card">
+                                <div class="problem-card-icon">📰</div>
+                                <h4 class="problem-card-title">Digital Misinformation</h4>
+                                <p class="problem-card-desc">
+                                    AI-generated fake news articles, manipulated media, 
+                                    and coordinated disinformation campaigns.
+                                </p>
+                                <ul class="problem-card-list">
+                                    <li>Fake news spread</li>
+                                    <li>Communal tensions</li>
+                                    <li>Election interference</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- SECTION 4: WHY EXISTING SYSTEMS FAIL -->
+        <!-- ========================================= -->
+        <section class="section section-failure" id="failure">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Gap Analysis</span>
+                    <h2 class="section-title">Why Existing Systems Fail</h2>
+                    <p class="section-subtitle">Identifying the limitations of current cyber defense mechanisms</p>
+                </div>
+                <div class="failure-content">
+                    <div class="failure-comparison">
+                        <div class="failure-column failure-old">
+                            <h3 class="failure-column-title">
+                                <span class="failure-icon">❌</span>
+                                Current Limitations
+                            </h3>
+                            <ul class="failure-list">
+                                <li class="failure-item">
+                                    <span class="failure-marker">✗</span>
+                                    <div class="failure-text">
+                                        <strong>Reactive Approach:</strong> 
+                                        Systems only respond after damage is done
+                                    </div>
+                                </li>
+                                <li class="failure-item">
+                                    <span class="failure-marker">✗</span>
+                                    <div class="failure-text">
+                                        <strong>Language Barrier:</strong> 
+                                        No support for Marathi and regional dialects
+                                    </div>
+                                </li>
+                                <li class="failure-item">
+                                    <span class="failure-marker">✗</span>
+                                    <div class="failure-text">
+                                        <strong>Complex Interfaces:</strong> 
+                                        Not accessible to elderly and rural users
+                                    </div>
+                                </li>
+                                <li class="failure-item">
+                                    <span class="failure-marker">✗</span>
+                                    <div class="failure-text">
+                                        <strong>Outdated Detection:</strong> 
+                                        Cannot identify latest AI-generated content
+                                    </div>
+                                </li>
+                                <li class="failure-item">
+                                    <span class="failure-marker">✗</span>
+                                    <div class="failure-text">
+                                        <strong>Slow Response:</strong> 
+                                        Hours or days to analyze suspicious content
+                                    </div>
+                                </li>
+                                <li class="failure-item">
+                                    <span class="failure-marker">✗</span>
+                                    <div class="failure-text">
+                                        <strong>No Public Access:</strong> 
+                                        Tools limited to law enforcement only
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="failure-column failure-new">
+                            <h3 class="failure-column-title">
+                                <span class="failure-icon">✅</span>
+                                TrustNet.Ai Solution
+                            </h3>
+                            <ul class="failure-list">
+                                <li class="failure-item">
+                                    <span class="failure-marker success">✓</span>
+                                    <div class="failure-text">
+                                        <strong>Proactive Defense:</strong> 
+                                        Real-time detection before threats escalate
+                                    </div>
+                                </li>
+                                <li class="failure-item">
+                                    <span class="failure-marker success">✓</span>
+                                    <div class="failure-text">
+                                        <strong>Multi-Language:</strong> 
+                                        Full Marathi support with voice assistance
+                                    </div>
+                                </li>
+                                <li class="failure-item">
+                                    <span class="failure-marker success">✓</span>
+                                    <div class="failure-text">
+                                        <strong>Simple Design:</strong> 
+                                        One-click detection for all age groups
+                                    </div>
+                                </li>
+                                <li class="failure-item">
+                                    <span class="failure-marker success">✓</span>
+                                    <div class="failure-text">
+                                        <strong>Cutting-Edge AI:</strong> 
+                                        Continuously updated detection models
+                                    </div>
+                                </li>
+                                <li class="failure-item">
+                                    <span class="failure-marker success">✓</span>
+                                    <div class="failure-text">
+                                        <strong>Instant Results:</strong> 
+                                        Analysis complete in under 5 seconds
+                                    </div>
+                                </li>
+                                <li class="failure-item">
+                                    <span class="failure-marker success">✓</span>
+                                    <div class="failure-text">
+                                        <strong>Citizen Access:</strong> 
+                                        Free tool available to every resident
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- SECTION 5: SOLUTION OVERVIEW -->
+        <!-- ========================================= -->
+        <section class="section section-solution" id="solution">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Approach</span>
+                    <h2 class="section-title" id="solutionTitle">Comprehensive AI Defense Solution</h2>
+                    <p class="section-subtitle">A multi-layered approach to cyber safety</p>
+                </div>
+                <div class="solution-content">
+                    <div class="solution-main">
+                        <div class="solution-diagram">
+                            <div class="solution-center">
+                                <span class="solution-center-icon">🛡️</span>
+                                <span class="solution-center-text">TrustNet.Ai Core</span>
+                            </div>
+                            <div class="solution-orbit solution-orbit-1">
+                                <div class="solution-node" data-label="Image Analysis">
+                                    <span>🖼️</span>
+                                </div>
+                            </div>
+                            <div class="solution-orbit solution-orbit-2">
+                                <div class="solution-node" data-label="Voice Detection">
+                                    <span>🔊</span>
+                                </div>
+                            </div>
+                            <div class="solution-orbit solution-orbit-3">
+                                <div class="solution-node" data-label="Text Analysis">
+                                    <span>📝</span>
+                                </div>
+                            </div>
+                            <div class="solution-orbit solution-orbit-4">
+                                <div class="solution-node" data-label="Alert System">
+                                    <span>🚨</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-features">
+                        <div class="solution-feature">
+                            <div class="solution-feature-icon">🔬</div>
+                            <div class="solution-feature-content">
+                                <h4 class="solution-feature-title">Deep Learning Models</h4>
+                                <p class="solution-feature-desc">
+                                    State-of-the-art neural networks trained on millions of samples 
+                                    to detect subtle artifacts in AI-generated media.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="solution-feature">
+                            <div class="solution-feature-icon">🔗</div>
+                            <div class="solution-feature-content">
+                                <h4 class="solution-feature-title">Blockchain Verification</h4>
+                                <p class="solution-feature-desc">
+                                    Immutable logging of all analyses for transparency 
+                                    and legal evidence preservation.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="solution-feature">
+                            <div class="solution-feature-icon">📱</div>
+                            <div class="solution-feature-content">
+                                <h4 class="solution-feature-title">Mobile-First Design</h4>
+                                <p class="solution-feature-desc">
+                                    Optimized for smartphones with low bandwidth requirements 
+                                    for rural connectivity.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="solution-feature">
+                            <div class="solution-feature-icon">🏛️</div>
+                            <div class="solution-feature-content">
+                                <h4 class="solution-feature-title">Government Integration</h4>
+                                <p class="solution-feature-desc">
+                                    Direct connection to Maharashtra Cyber Cell for 
+                                    rapid threat response and investigation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- SECTION 6: AI MEDIA DETECTION -->
+        <!-- ========================================= -->
+        <section class="section section-detection" id="detection">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Try It Now</span>
+                    <h2 class="section-title" id="detectionTitle">AI Media Detection Tool</h2>
+                    <p class="section-subtitle">Upload an image or audio file to check for AI manipulation</p>
+                </div>
+                <div class="detection-content">
+                    <div class="detection-tabs">
+                        <button class="tab-btn active" onclick="switchTab('images')">🖼️ Images</button>
+                        <button class="tab-btn" onclick="switchTab('voices')">🎙️ Voices</button>
+                        <button class="tab-btn" onclick="switchTab('videos')">🎬 Videos</button>
+                        <button class="tab-btn" onclick="switchTab('messages')">💬 Messages</button>
+                    </div>
+                    <div class="detection-tool">
+                        <!-- Media Upload Tool -->
+                        <div id="mediaUploadTool">
+                            <div class="detection-upload">
+                                <div class="upload-zone" id="uploadZone">
+                                    <div class="upload-icon" id="tabIcon">📁</div>
+                                    <h3 class="upload-title" id="tabTitle">Drop your file here</h3>
+                                    <p class="upload-text">or click to browse</p>
+                                    <p class="upload-formats" id="tabFormats">Supported: JPG, PNG, WEBP (Max 10MB)</p>
+                                    <input 
+                                        type="file" 
+                                        id="mediaInput" 
+                                        class="upload-input" 
+                                        accept="image/*"
+                                    >
+                                </div>
+                                <div class="upload-preview" id="uploadPreview">
+                                    <img id="previewImage" class="preview-image" alt="Preview">
+                                    <div id="previewAudio" class="preview-audio">
+                                        <span class="preview-audio-icon">🎵</span>
+                                        <span class="preview-audio-name" id="audioFileName"></span>
+                                    </div>
+                                    <div id="previewVideo" class="preview-video" style="display: none; text-align: center; padding: 20px;">
+                                        <span class="preview-video-icon" style="font-size: 3rem;">📹</span>
+                                        <span class="preview-video-name" id="videoFileName" style="display: block; margin-top: 10px; color: white;"></span>
+                                    </div>
+                                    <button class="preview-remove" id="removeFile" onclick="removeFile()">✕</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text Analysis Tool (Initially Hidden) -->
+                        <div id="textAnalysisTool" style="display: none;">
+                            <div class="message-input-container">
+                                <textarea id="messageInput" placeholder="Paste the suspicious message here..." class="message-textarea"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="detection-actions">
+                            <button class="btn btn-analyze" id="analyzeBtn" onclick="analyzeMedia()">
+                                <span class="btn-icon">🔍</span>
+                                <span class="btn-text">Analyze Content</span>
+                            </button>
+                        </div>
+                        <div class="detection-result" id="detectionResult">
+                            <div class="result-header">
+                                <span class="result-icon" id="resultIcon">📊</span>
+                                <span class="result-title">Analysis Result</span>
+                            </div>
+                            <div class="result-box" id="resultBox">
+                                Upload a file and click "Analyze Media" to see results here.
+                            </div>
+                            <div class="result-details" id="resultDetails">
+                                <div class="result-detail">
+                                    <span class="detail-label">Confidence:</span>
+                                    <div class="detail-bar">
+                                        <div class="detail-bar-fill" id="confidenceBar"></div>
+                                    </div>
+                                    <span class="detail-value" id="confidenceValue">--%</span>
+                                </div>
+                                <div class="result-detail">
+                                    <span class="detail-label">Analysis Time:</span>
+                                    <span class="detail-value" id="analysisTime">--</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detection-info">
+                        <h3 class="detection-info-title">How It Works</h3>
+                        <div class="detection-steps">
+                            <div class="detection-step">
+                                <span class="step-number">1</span>
+                                <div class="step-content">
+                                    <h4>Upload</h4>
+                                    <p>Select an image or audio file you want to verify</p>
+                                </div>
+                            </div>
+                            <div class="detection-step">
+                                <span class="step-number">2</span>
+                                <div class="step-content">
+                                    <h4>Process</h4>
+                                    <p>Our AI analyzes patterns, artifacts, and metadata</p>
+                                </div>
+                            </div>
+                            <div class="detection-step">
+                                <span class="step-number">3</span>
+                                <div class="step-content">
+                                    <h4>Result</h4>
+                                    <p>Get instant verdict with confidence percentage</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detection-disclaimer">
+                            <span class="disclaimer-icon">⚠️</span>
+                            <p>This is a demonstration tool. For legal purposes, please contact Maharashtra Cyber Cell.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- SECTION 7: SYSTEM WORKFLOW -->
+        <!-- ========================================= -->
+        <section class="section section-workflow" id="workflow">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Process Flow</span>
+                    <h2 class="section-title">System Workflow</h2>
+                    <p class="section-subtitle">End-to-end process from detection to resolution</p>
+                </div>
+                <div class="workflow-content">
+                    <ol class="workflow-list">
+                        <li class="workflow-item">
+                            <div class="workflow-number">01</div>
+                            <div class="workflow-card">
+                                <h3 class="workflow-title">User Submission</h3>
+                                <p class="workflow-desc">
+                                    Citizen uploads suspicious media through web portal, mobile app, 
+                                    or WhatsApp bot. System accepts images, audio, video, and text.
+                                </p>
+                                <div class="workflow-tags">
+                                    <span class="workflow-tag">Web Portal</span>
+                                    <span class="workflow-tag">Mobile App</span>
+                                    <span class="workflow-tag">WhatsApp</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="workflow-item">
+                            <div class="workflow-number">02</div>
+                            <div class="workflow-card">
+                                <h3 class="workflow-title">Pre-Processing</h3>
+                                <p class="workflow-desc">
+                                    Media is validated, compressed if needed, and prepared for analysis. 
+                                    Metadata extraction and format normalization occurs.
+                                </p>
+                                <div class="workflow-tags">
+                                    <span class="workflow-tag">Validation</span>
+                                    <span class="workflow-tag">Metadata</span>
+                                    <span class="workflow-tag">Normalization</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="workflow-item">
+                            <div class="workflow-number">03</div>
+                            <div class="workflow-card">
+                                <h3 class="workflow-title">AI Analysis</h3>
+                                <p class="workflow-desc">
+                                    Multiple neural network models analyze the content simultaneously. 
+                                    Deep learning algorithms detect manipulation signatures.
+                                </p>
+                                <div class="workflow-tags">
+                                    <span class="workflow-tag">CNN</span>
+                                    <span class="workflow-tag">Transformer</span>
+                                    <span class="workflow-tag">GAN Detection</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="workflow-item">
+                            <div class="workflow-number">04</div>
+                            <div class="workflow-card">
+                                <h3 class="workflow-title">Confidence Scoring</h3>
+                                <p class="workflow-desc">
+                                    Results from multiple models are aggregated. Ensemble voting 
+                                    produces final authenticity score with confidence interval.
+                                </p>
+                                <div class="workflow-tags">
+                                    <span class="workflow-tag">Ensemble</span>
+                                    <span class="workflow-tag">Scoring</span>
+                                    <span class="workflow-tag">Validation</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="workflow-item">
+                            <div class="workflow-number">05</div>
+                            <div class="workflow-card">
+                                <h3 class="workflow-title">Result Delivery</h3>
+                                <p class="workflow-desc">
+                                    User receives detailed report with verdict, confidence level, 
+                                    and recommended actions. Available in English and Marathi.
+                                </p>
+                                <div class="workflow-tags">
+                                    <span class="workflow-tag">Report</span>
+                                    <span class="workflow-tag">Multi-language</span>
+                                    <span class="workflow-tag">Guidance</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="workflow-item">
+                            <div class="workflow-number">06</div>
+                            <div class="workflow-card">
+                                <h3 class="workflow-title">Authority Alert</h3>
+                                <p class="workflow-desc">
+                                    High-risk content automatically flagged to Cyber Cell. 
+                                    Case tracking initiated for serious threats.
+                                </p>
+                                <div class="workflow-tags">
+                                    <span class="workflow-tag">Auto-Alert</span>
+                                    <span class="workflow-tag">Case Tracking</span>
+                                    <span class="workflow-tag">Response</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- SECTION 8: EXPECTED IMPACT -->
+        <!-- ========================================= -->
+        <section class="section section-impact" id="impact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Projected Outcomes</span>
+                    <h2 class="section-title">Expected Impact</h2>
+                    <p class="section-subtitle">Measurable outcomes for Maharashtra's digital safety</p>
+                </div>
+                <div class="impact-content">
+                    <div class="impact-stats">
+                        <div class="impact-stat">
+                            <span class="impact-number" data-count="50">0</span>
+                            <span class="impact-suffix">Lakh+</span>
+                            <span class="impact-label">Citizens Protected Annually</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number" data-count="200">0</span>
+                            <span class="impact-suffix">Cr</span>
+                            <span class="impact-label">Potential Fraud Prevented</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number" data-count="95">0</span>
+                            <span class="impact-suffix">%</span>
+                            <span class="impact-label">Detection Accuracy</span>
+                        </div>
+                        <div class="impact-stat">
+                            <span class="impact-number" data-count="3">0</span>
+                            <span class="impact-suffix">Sec</span>
+                            <span class="impact-label">Average Analysis Time</span>
+                        </div>
+                    </div>
+                    <div class="impact-areas">
+                        <h3 class="impact-areas-title">Impact Areas</h3>
+                        <div class="impact-grid">
+                            <div class="impact-card">
+                                <div class="impact-card-icon">👨‍👩‍👧‍👦</div>
+                                <h4 class="impact-card-title">Family Protection</h4>
+                                <p class="impact-card-desc">
+                                    Shield families from voice cloning scams targeting elderly parents 
+                                    and financial fraud affecting household savings.
+                                </p>
+                            </div>
+                            <div class="impact-card">
+                                <div class="impact-card-icon">🏢</div>
+                                <h4 class="impact-card-title">Business Security</h4>
+                                <p class="impact-card-desc">
+                                    Protect SMEs and corporations from CEO fraud, fake invoice scams, 
+                                    and corporate espionage using deepfakes.
+                                </p>
+                            </div>
+                            <div class="impact-card">
+                                <div class="impact-card-icon">🗳️</div>
+                                <h4 class="impact-card-title">Electoral Integrity</h4>
+                                <p class="impact-card-desc">
+                                    Safeguard democratic processes by detecting political deepfakes 
+                                    and AI-generated misinformation during elections.
+                                </p>
+                            </div>
+                            <div class="impact-card">
+                                <div class="impact-card-icon">🏥</div>
+                                <h4 class="impact-card-title">Healthcare Safety</h4>
+                                <p class="impact-card-desc">
+                                    Combat fake medical advice, fraudulent health schemes, 
+                                    and AI-generated false health information.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- SECTION 9: SUBSCRIPTION PLANS -->
+        <!-- ========================================= -->
+        <section class="section section-subscription" id="subscription">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Premium Access</span>
+                    <h2 class="section-title">Subscription Plans</h2>
+                    <p class="section-subtitle">Get advanced protection and priority support for your digital safety</p>
+                </div>
+                <div class="subscription-grid">
+                    <div class="subscription-card">
+                        <div class="subscription-badge">Monthly</div>
+                        <h3 class="subscription-plan">Standard</h3>
+                        <div class="subscription-price">₹99<span>/month</span></div>
+                        <ul class="subscription-features">
+                            <li>Unlimited Image Scans</li>
+                            <li>Voice Scam Detection</li>
+                            <li>WhatsApp Bot Access</li>
+                            <li>Email Support</li>
+                        </ul>
+                        <button class="btn btn-primary subscribe-btn" data-plan="monthly" data-price="99">Subscribe Now</button>
+                    </div>
+                    <div class="subscription-card featured">
+                        <div class="subscription-badge">Best Value</div>
+                        <h3 class="subscription-plan">Semi-Annual</h3>
+                        <div class="subscription-price">₹499<span>/6 months</span></div>
+                        <ul class="subscription-features">
+                            <li>All Standard Features</li>
+                            <li>Video Deepfake Analysis</li>
+                            <li>Priority Threat Alerts</li>
+                            <li>Personal Safety Dashboard</li>
+                        </ul>
+                        <button class="btn btn-primary subscribe-btn" data-plan="semi-annual" data-price="499">Subscribe Now</button>
+                    </div>
+                    <div class="subscription-card">
+                        <div class="subscription-badge">Yearly</div>
+                        <h3 class="subscription-plan">Premium</h3>
+                        <div class="subscription-price">₹799<span>/year</span></div>
+                        <ul class="subscription-features">
+                            <li>All Semi-Annual Features</li>
+                            <li>24/7 Helpline Access</li>
+                            <li>Family Protection (5 Users)</li>
+                            <li>Direct Cyber Cell Referral</li>
+                        </ul>
+                        <button class="btn btn-primary subscribe-btn" data-plan="yearly" data-price="799">Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- SECTION 10: AWARENESS & EDUCATION -->
+        <!-- ========================================= -->
+        <section class="section section-awareness" id="awareness">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Public Education</span>
+                    <h2 class="section-title" id="awarenessTitle">Awareness & Education</h2>
+                    <p class="section-subtitle">Empowering citizens with knowledge to stay safe</p>
+                </div>
+                <div class="awareness-content">
+                    <div class="awareness-tips">
+                        <h3 class="awareness-tips-title">🚨 Red Flags to Watch For</h3>
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <div class="tip-icon">📞</div>
+                                <h4>Urgent Family Calls</h4>
+                                <p>Scammers use cloned voices claiming emergencies. Always verify through a separate call.</p>
+                            </div>
+                            <div class="tip-card">
+                                <div class="tip-icon">💰</div>
+                                <h4>Money Requests</h4>
+                                <p>Any request for immediate money transfer via call or message should be verified in person.</p>
+                            </div>
+                            <div class="tip-card">
+                                <div class="tip-icon">🏆</div>
+                                <h4>Too Good to Be True</h4>
+                                <p>Lottery wins, job offers, or prizes you didn't apply for are almost always scams.</p>
+                            </div>
+                            <div class="tip-card">
+                                <div class="tip-icon">🔗</div>
+                                <h4>Suspicious Links</h4>
+                                <p>Never click links from unknown sources. Check URLs carefully for misspellings.</p>
+                            </div>
+                            <div class="tip-card">
+                                <div class="tip-icon">👤</div>
+                                <h4>Unnatural Images</h4>
+                                <p>Look for blurred edges, inconsistent lighting, or strange artifacts in photos.</p>
+                            </div>
+                            <div class="tip-card">
+                                <div class="tip-icon">🎙️</div>
+                                <h4>Robotic Voice</h4>
+                                <p>AI voices may have subtle glitches, unnatural pauses, or monotone patterns.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="awareness-quiz">
+                        <h3 class="awareness-resources-title">🧠 Knowledge Check</h3>
+                        <div class="quiz-container">
+                            <div class="quiz-question">
+                                <h4>Question 1: You receive a call from your "son" crying and asking for money because of an accident. What is the first thing you should do?</h4>
+                                <div class="quiz-options">
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">Transfer the money immediately</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, true)">Hang up and call your son on his known number</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">Ask for his location and send someone else</button>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <h4>Question 2: An image of a political leader has 6 fingers on one hand. This is a common sign of:</h4>
+                                <div class="quiz-options">
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">A camera glitch</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, true)">AI-generated deepfake</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">Poor photo lighting</button>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <h4>Question 3: Which helpline should you call to report a cyber fraud in Maharashtra?</h4>
+                                <div class="quiz-options">
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">100</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">101</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, true)">1930</button>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <h4>Question 4: You receive a WhatsApp message from an unknown number claiming you won a lottery of ₹10 lakhs. What should you do?</h4>
+                                <div class="quiz-options">
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">Click on the link to claim your prize</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">Share your bank details to receive the money</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, true)">Block and report the number - it's a scam</button>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <h4>Question 5: What is a common sign of a deepfake video?</h4>
+                                <div class="quiz-options">
+                                    <button class="quiz-option" onclick="checkAnswer(this, true)">Unnatural blinking, lip sync issues, or blurry edges around the face</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">High video resolution</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">Clear audio quality</button>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <h4>Question 6: Someone calls claiming to be from your bank asking for your OTP. What should you do?</h4>
+                                <div class="quiz-options">
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">Share the OTP as they know your account details</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, true)">Never share OTP - banks never ask for OTPs over phone</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">Ask them to call back later</button>
+                                </div>
+                            </div>
+                            <div class="quiz-question">
+                                <h4>Question 7: What is the best way to verify if a viral news story is true?</h4>
+                                <div class="quiz-options">
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">Trust it if many people have shared it</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, true)">Check multiple reliable news sources and fact-checking websites</button>
+                                    <button class="quiz-option" onclick="checkAnswer(this, false)">Forward it to friends for their opinion</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="awareness-resources">
+                        <h3 class="awareness-resources-title">📚 Educational Resources</h3>
+                        <div class="resources-list">
+                            <div class="resource-item">
+                                <span class="resource-icon">📖</span>
+                                <div class="resource-content">
+                                    <h4>Cyber Safety Guide (Marathi)</h4>
+                                    <p>Complete guide for rural communities on digital safety</p>
+                                </div>
+                                <span class="resource-badge">PDF</span>
+                            </div>
+                            <div class="resource-item">
+                                <span class="resource-icon">🎥</span>
+                                <div class="resource-content">
+                                    <h4>Video Tutorials</h4>
+                                    <p>Step-by-step guides on identifying fake content</p>
+                                </div>
+                                <span class="resource-badge">Video</span>
+                            </div>
+                            <div class="resource-item">
+                                <span class="resource-icon">🎮</span>
+                                <div class="resource-content">
+                                    <h4>Interactive Quiz</h4>
+                                    <p>Test your ability to spot deepfakes and scams</p>
+                                </div>
+                                <span class="resource-badge">Interactive</span>
+                            </div>
+                            <div class="resource-item">
+                                <span class="resource-icon">📱</span>
+                                <div class="resource-content">
+                                    <h4>WhatsApp Safety Tips</h4>
+                                    <p>Daily tips delivered to your phone</p>
+                                </div>
+                                <span class="resource-badge">Subscribe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- SECTION 10: ETHICS & LIMITATIONS -->
+        <!-- ========================================= -->
+        <section class="section section-ethics" id="ethics">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Responsible AI</span>
+                    <h2 class="section-title">Ethics & Limitations</h2>
+                    <p class="section-subtitle">Our commitment to responsible technology deployment</p>
+                </div>
+                <div class="ethics-content">
+                    <div class="ethics-principles">
+                        <h3 class="ethics-title">🏛️ Ethical Principles</h3>
+                        <div class="principles-grid">
+                            <div class="principle-card">
+                                <div class="principle-icon">🔒</div>
+                                <h4>Privacy First</h4>
+                                <p>
+                                    All uploaded content is encrypted and automatically deleted after analysis. 
+                                    We never store personal media without explicit consent.
+                                </p>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon">⚖️</div>
+                                <h4>No Bias</h4>
+                                <p>
+                                    Our models are regularly audited for demographic bias. 
+                                    Equal accuracy across all communities and regions.
+                                </p>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon">📋</div>
+                                <h4>Transparency</h4>
+                                <p>
+                                    Complete disclosure of how our AI makes decisions. 
+                                    Explainable AI outputs for every analysis.
+                                </p>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon">🤝</div>
+                                <h4>Human Oversight</h4>
+                                <p>
+                                    Critical decisions always reviewed by human experts. 
+                                    AI assists but doesn't replace human judgment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ethics-limitations">
+                        <h3 class="ethics-title">⚠️ Known Limitations</h3>
+                        <div class="limitations-list">
+                            <div class="limitation-item">
+                                <span class="limitation-icon">📊</span>
+                                <div class="limitation-content">
+                                    <h4>Accuracy Rate</h4>
+                                    <p>
+                                        While our system achieves 95% accuracy, no AI system is perfect. 
+                                        Results should be considered indicators, not absolute verdicts.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="limitation-item">
+                                <span class="limitation-icon">🆕</span>
+                                <div class="limitation-content">
+                                    <h4>New Techniques</h4>
+                                    <p>
+                                        AI generation technology evolves rapidly. Very new techniques 
+                                        may not be detected until our models are updated.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="limitation-item">
+                                <span class="limitation-icon">🖼️</span>
+                                <div class="limitation-content">
+                                    <h4>Quality Dependence</h4>
+                                    <p>
+                                        Heavily compressed or low-quality media may produce 
+                                        less reliable results due to lost information.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="limitation-item">
+                                <span class="limitation-icon">🌐</span>
+                                <div class="limitation-content">
+                                    <h4>Context Blind</h4>
+                                    <p>
+                                        Our AI analyzes media technically but cannot understand 
+                                        broader context or intent behind content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- SECTION 11: FUTURE SCOPE -->
+        <!-- ========================================= -->
+        <section class="section section-future" id="future">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Roadmap</span>
+                    <h2 class="section-title">Future Scope</h2>
+                    <p class="section-subtitle">Our vision for continued development and expansion</p>
+                </div>
+                <div class="future-content">
+                    <div class="future-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <span class="timeline-phase">Phase 1</span>
+                                <span class="timeline-date">Q1 2025</span>
+                            </div>
+                            <div class="timeline-card">
+                                <h3>Enhanced Detection</h3>
+                                <ul class="timeline-list">
+                                    <li>Video deepfake detection capability</li>
+                                    <li>Real-time video call screening</li>
+                                    <li>Advanced voice cloning detection</li>
+                                    <li>Multi-speaker audio analysis</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <span class="timeline-phase">Phase 2</span>
+                                <span class="timeline-date">Q2 2025</span>
+                            </div>
+                            <div class="timeline-card">
+                                <h3>Platform Expansion</h3>
+                                <ul class="timeline-list">
+                                    <li>Native mobile apps (iOS & Android)</li>
+                                    <li>Browser extension for social media</li>
+                                    <li>API for third-party integration</li>
+                                    <li>Telegram and Signal bot support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <span class="timeline-phase">Phase 3</span>
+                                <span class="timeline-date">Q3 2025</span>
+                            </div>
+                            <div class="timeline-card">
+                                <h3>Regional Expansion</h3>
+                                <ul class="timeline-list">
+                                    <li>Pan-India deployment</li>
+                                    <li>Support for 12+ Indian languages</li>
+                                    <li>State-specific customization</li>
+                                    <li>Rural connectivity optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <span class="timeline-phase">Phase 4</span>
+                                <span class="timeline-date">Q4 2025</span>
+                            </div>
+                            <div class="timeline-card">
+                                <h3>Advanced Features</h3>
+                                <ul class="timeline-list">
+                                    <li>Predictive threat intelligence</li>
+                                    <li>Automated content provenance</li>
+                                    <li>Blockchain-based verification</li>
+                                    <li>AI-powered legal documentation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================= -->
+    <!-- FOOTER -->
+    <!-- ============================================= -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <span class="footer-logo">🛡️</span>
+                        <h3 class="footer-title">TrustNet.Ai</h3>
+                        <p class="footer-tagline">Protecting Citizens in the Age of AI</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4 class="footer-column-title">Platform</h4>
+                            <ul class="footer-list">
+                                <li><a href="#detection">Detection Tool</a></li>
+                                <li><a href="whatsapp.html">WhatsApp Scanner</a></li>
+                                <li><a href="admin.html">Admin Dashboard</a></li>
+                                <li><a href="#awareness">Resources</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4 class="footer-column-title">Information</h4>
+                            <ul class="footer-list">
+                                <li><a href="#vision">About Us</a></li>
+                                <li><a href="#ethics">Privacy Policy</a></li>
+                                <li><a href="#ethics">Terms of Use</a></li>
+                                <li><a href="#ethics">Ethics Statement</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4 class="footer-column-title">Support</h4>
+                            <ul class="footer-list">
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Report Issue</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-emergency">
+                    <div class="emergency-content">
+                        <span class="emergency-icon">🚨</span>
+                        <div class="emergency-text">
+                            <strong>Emergency Helpline:</strong> 
+                            Maharashtra Cyber Cell - <a href="tel:1930">1930</a> | 
+                            Women Helpline - <a href="tel:181">181</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-disclaimer">
+                        <p>
+                            <strong>Disclaimer:</strong> This platform is a hackathon demonstration project. 
+                            The AI detection tool provides indicative results only and should not be used as 
+                            sole evidence for legal proceedings. For official investigations, please contact 
+                            Maharashtra Cyber Cell. This is not an official government website.
+                        </p>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>© 2026 TrustNet.Ai. Created for National Hackathon 2026.</p>
+                        <p>Made with ❤️ for the citizens of Maharashtra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- ============================================= -->
+    <!-- CHATBOT WIDGET -->
+    <!-- ============================================= -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <div class="chatbot-controls">
+            <button class="lang-toggle-bottom" id="langToggleBottom" onclick="toggleLang()">
+                <span class="lang-icon">🌐</span>
+                <span class="lang-text" id="langTextBottom">मराठी</span>
+            </button>
+            <button class="chatbot-toggle" id="chatbotToggle" onclick="toggleChatbot()">
+                <span class="chatbot-toggle-icon">💬</span>
+                <span class="chatbot-toggle-text">Help</span>
+            </button>
+        </div>
+        <div class="chatbot-container" id="chatbotContainer">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <span class="chatbot-avatar">🤖</span>
+                    <span class="chatbot-header-title">Help & Support</span>
+                </div>
+                <button class="chatbot-close" onclick="toggleChatbot()">✕</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message bot">
+                    <span class="message-avatar">🤖</span>
+                    <div class="message-content">
+                        <p>Hello! I'm TrustNet Assistant. How can I help you today?</p>
+                        <p>नमस्कार! मी TrustNet सहाय्यक आहे. मी तुम्हाला कशी मदत करू शकतो?</p>
+                    </div>
+                </div>
+                <div class="chatbot-quick-actions">
+                    <button class="quick-action-btn" onclick="askQuestion('how_to_use')">How to use?</button>
+                    <button class="quick-action-btn" onclick="askQuestion('how_it_works')">How it works?</button>
+                    <button class="quick-action-btn" onclick="askQuestion('what_is_deepfake')">What is Deepfake?</button>
+                    <button class="quick-action-btn" onclick="askQuestion('report_scam')">Report a scam</button>
+                    <button class="quick-action-btn" onclick="askQuestion('subscription')">Subscription info</button>
+                </div>
+            </div>
+            <div class="chatbot-input-container">
+                <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type your question..." onkeypress="handleChatKeypress(event)">
+                <button class="chatbot-send" onclick="sendChatMessage()">
+                    <span>➤</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

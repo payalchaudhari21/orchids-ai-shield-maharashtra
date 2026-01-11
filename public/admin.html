@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - TrustNet.Ai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .admin-page {
+            padding: 120px 20px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .admin-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        .admin-card {
+            background: rgba(13, 18, 26, 0.8);
+            border: 1px solid rgba(0, 242, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            backdrop-filter: blur(20px);
+        }
+        .stat-val {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #00f2fe;
+            margin: 10px 0;
+        }
+        .stat-label {
+            color: #8892b0;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .admin-table {
+            width: 100%;
+            margin-top: 40px;
+            border-collapse: collapse;
+            background: rgba(13, 18, 26, 0.5);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .admin-table th, .admin-table td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .admin-table th {
+            background: rgba(0, 242, 255, 0.05);
+            color: #00f2fe;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+        .status-badge {
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .status-high { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+        .status-med { background: rgba(245, 158, 11, 0.2); color: #f59e0b; }
+        .lock-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(5, 7, 10, 0.95);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .lock-card {
+            background: rgba(13, 18, 26, 0.8);
+            border: 1px solid rgba(0, 242, 255, 0.3);
+            padding: 40px;
+            border-radius: 24px;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="lockOverlay" class="lock-overlay">
+        <div class="lock-card">
+            <span style="font-size: 3rem; margin-bottom: 20px; display: block;">🔒</span>
+            <h2>Restricted Access</h2>
+            <p>The Admin Dashboard is only accessible to authorized Maharashtra Cyber Cell officials.</p>
+            <button class="btn btn-primary btn-full" style="margin-top: 20px;" onclick="window.location.href='login.html'">
+                Login as Official
+            </button>
+            <p style="margin-top: 20px;"><a href="index.html" style="color: #8892b0;">Back to Home</a></p>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-icon">🛡️</span>
+                    <span class="logo-text">TrustNet<span class="logo-highlight">.Ai Admin</span></span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="admin-page">
+        <h1>Cyber Cell Command Center</h1>
+        <p>Real-time threat monitoring and incident response</p>
+
+        <div class="admin-grid">
+            <div class="admin-card">
+                <div class="stat-label">Active Scans (Today)</div>
+                <div class="stat-val">12,482</div>
+                <div style="color: #10b981; font-size: 0.8rem;">↑ 14% from yesterday</div>
+            </div>
+            <div class="admin-card">
+                <div class="stat-label">High Risk Alerts</div>
+                <div class="stat-val" style="color: #ef4444;">84</div>
+                <div style="color: #8892b0; font-size: 0.8rem;">Pending investigation</div>
+            </div>
+            <div class="admin-card">
+                <div class="stat-label">Total Citizens Protected</div>
+                <div class="stat-val">1,204,591</div>
+                <div style="color: #00f2fe; font-size: 0.8rem;">Statewide coverage</div>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 50px;">Recent Incident Reports</h2>
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Region</th>
+                    <th>Type</th>
+                    <th>Risk Level</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10:42 AM</td>
+                    <td>Mumbai Suburban</td>
+                    <td>Deepfake Voice</td>
+                    <td><span class="status-badge status-high">HIGH</span></td>
+                    <td>Investigating</td>
+                </tr>
+                <tr>
+                    <td>10:38 AM</td>
+                    <td>Pune City</td>
+                    <td>WhatsApp Scam</td>
+                    <td><span class="status-badge status-med">MEDIUM</span></td>
+                    <td>Flagged</td>
+                </tr>
+                <tr>
+                    <td>10:35 AM</td>
+                    <td>Nagpur</td>
+                    <td>Fake Govt Order</td>
+                    <td><span class="status-badge status-high">HIGH</span></td>
+                    <td>Blocked</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script>
+        // Simple check for demo purposes
+        window.onload = () => {
+            const session = localStorage.getItem('trustnet_session');
+            if (session) {
+                const data = JSON.parse(session);
+                // For demo, if email is 'admin@cybercell.gov.in' show dashboard
+                if (data.email === 'admin@cybercell.gov.in') {
+                    document.getElementById('lockOverlay').style.display = 'none';
+                }
+            }
+        };
+    </script>
+</body>
+</html>
